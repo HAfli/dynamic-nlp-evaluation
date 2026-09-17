@@ -1,0 +1,1 @@
+const header=document.querySelector('.site-header');let last=0;window.addEventListener('scroll',()=>{const y=window.scrollY;if(y>last&&y>100) header.style.transform='translateY(-100%)';else header.style.transform='translateY(0)';last=y},{passive:true});
